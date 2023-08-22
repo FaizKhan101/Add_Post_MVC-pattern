@@ -1,0 +1,23 @@
+<%- include("includes/head.ejs", {title: "Login"}) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+    <%- include('includes/header.ejs') %>
+    <main>
+        <form id="auth-form" action="/login" method="POST">
+            <h2>Login</h2>
+            <% if (inputData.hasError) { %>
+                <p class="error">Wrong Data - Try Again!</p>
+            <% } %>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" value="<%= inputData.email %>" required name="email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" value="<%= inputData.password %>" required name="password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </main>
+</body>
+</html>

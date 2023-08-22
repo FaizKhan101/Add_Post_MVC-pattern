@@ -1,0 +1,23 @@
+#admin-form {
+    width: 90%;
+    margin: 2rem auto 0 auto;
+}
+
+#admin-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+#admin-form input, textarea {
+    border-radius: 4px;
+    width: 60%;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+    font: inherit;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 10rem;
+}

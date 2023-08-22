@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Heebo&family=Kaushan+Script&family=Noto+Serif:wght@400;700&family=Oswald&family=Playfair+Display:wght@400;700&family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+  color: rgb(32, 32, 32);
+  background-color: rgb(251, 251, 255);
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+}
+
+#main-header nav {
+    padding: 1rem;
+    background-color: rgb(16, 95, 16);
+}
+
+#main-header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-header li {
+    margin: 0 1rem;
+}
+
+#main-header li a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-header li a:hover {
+    font-weight: bold;
+}
+
+.btn {
+    margin-bottom: 1rem;
+    font: inherit;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(16, 95, 16);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(24, 138, 24);
+    /* color:rgb(32, 52, 138); */
+    /* border: 2px solid rgb(32, 52, 138); */
+}
+
+#blog-desc {
+    width: 60%;
+    margin: auto;
+}
+
+.cancel-btn {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font: inherit;
+    font-weight: bold;
+    color: inherit;
+    border-radius: 4px;
+    margin-right: 1rem;
+    transition: 0.3s;
+    background: none;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(241, 158, 158);
+}
+
+#logout {
+    background: inherit;
+    border: none;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+#logout:hover {
+    font-weight: bold;
+}
+
+.error {
+    background-color: rgb(243, 187, 187);
+    padding: 2px 5px;
+    border-radius: 4px;
+}

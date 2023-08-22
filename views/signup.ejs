@@ -1,0 +1,27 @@
+<%- include("includes/head.ejs", {title: "Sign-Up"}) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+    <%- include('includes/header.ejs') %>
+    <main>
+        <form id="auth-form" action="/signup" method="POST">
+            <h2>Sign-Up</h2>
+            <% if (inputData.hasError) { %>
+                <p class="error">Something Wrong in your data - Try again!</p>
+            <% } %>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" value="<%= inputData.email %>" required name="email">
+
+                <label for="confirm-email">Confirm Email</label>
+                <input type="email" id="confirm-email" value="<%= inputData.confirmEmail %>" required name="confirm-email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" value="<%= inputData.password %>" required name="password">
+            </div>
+            <a class="cancel-btn" href="/">Cancel</a>
+            <button type="submit" class="btn">SingUp</button>
+        </form>
+    </main>
+</body>
+</html>
